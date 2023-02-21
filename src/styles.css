@@ -1,9 +1,33 @@
 :root {
-  --primary-color: #d8e5d5;
+  --primary-color: #ded8cf;
   --secondary-color: #f44433;
   --accent-color: #2d5e99;
+  --heading-font-family: "Tenor Sans", sans-serif;
+  --cursive-font-family: "Petit Formal Script", cursive;
+  --right-shadow: 12px 12px rgba(244, 68, 51, 1);
 }
 
-/* font-family: 'Fahkwang', sans-serif;
-font-family: 'Petit Formal Script', cursive;
-font-family: 'Roboto Mono', monospace; */
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--primary-color);
+}
+h1 {
+  font-family: var(--heading-font-family);
+
+  font-size: 76px;
+  color: var(--secondary-color);
+}
+
+.hero {
+  border: 2px solid var(--secondary-color);
+}
+.hero h2 {
+  font-family: var(--cursive-font-family);
+  color: var(--accent-color);
+}
+.hero p {
+  color: var(--secondary-color);
+}
+.hero img {
+  box-shadow: var(--right-shadow);
+}
