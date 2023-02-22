@@ -1,33 +1,86 @@
 :root {
-  --primary-color: #ded8cf;
+  --primary-color: rgba(222, 216, 206, 0.637);
   --secondary-color: #f44433;
   --accent-color: #2d5e99;
-  --heading-font-family: "Tenor Sans", sans-serif;
-  --cursive-font-family: "Petit Formal Script", cursive;
+  --heading-font-family: "Literata", serif;
+  --cursive-font-family: "Caveat", cursive;
   --right-shadow: 12px 12px rgba(244, 68, 51, 1);
+  --left-shadow: -12px -12px rgba(244, 68, 51, 1);
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Overpass Mono", monospace;
   background-color: var(--primary-color);
 }
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 64px;
+  font-size: 60px;
   color: var(--secondary-color);
 }
-
-.hero {
-  border: 2px solid var(--secondary-color);
-}
-.hero h2 {
+h2 {
   font-family: var(--cursive-font-family);
   font-size: 28px;
   color: var(--accent-color);
 }
-.hero p {
+p {
   color: var(--secondary-color);
 }
-.hero img {
+
+.hero,
+.projects-container .project-block-description {
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-branding {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+.btn-branding:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.projects-container {
+  background-image: url(/images/grid.jpg);
+}
+.projects-container .row {
+  background-color: var(--primary-color);
+}
+.projects-container .project-block-description {
+  background: rgba(222, 216, 206, 0.9);
+}
+.projects-container p,
+.projects-container h2 {
+  background-color: rgb(222, 216, 206);
+}
+.projects-container p {
+  color: #272044;
+}
+.projects-container h2 {
+  font-size: 60px;
+}
+
+.project-block .left {
+  box-shadow: var(--left-shadow);
+}
+.project-block .right {
   box-shadow: var(--right-shadow);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .project-block-description {
+    text-align: center;
+  }
+  .project-block-description h2 {
+    font-size: 32px;
+  }
 }
