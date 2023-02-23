@@ -27,7 +27,9 @@ p {
 }
 
 .hero,
-.projects-container .project-block-description {
+.projects-container .project-block-description,
+.skills-container,
+.btn-inquiry:hover {
   border: 2px solid var(--secondary-color);
 }
 
@@ -38,6 +40,14 @@ p {
 .btn-branding:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+}
+
+.nav-tabs {
+  border-color: var(--secondary-color);
+}
+.nav-link {
+  color: var(--secondary-color);
+  font-size: 18px;
 }
 
 .projects-container {
@@ -67,6 +77,34 @@ p {
   box-shadow: var(--right-shadow);
 }
 
+.skills-container h2 {
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-weight: 700;
+}
+.skills-icon {
+  color: var(--accent-color);
+  font-size: 48px;
+}
+
+.inquiry-form {
+  background-color: rgba(45, 94, 153, 0.3);
+  border: 8px solid var(--accent-color);
+  font-weight: 700;
+}
+
+.inquiry-form p {
+  font-size: 24px;
+}
+.btn-inquiry {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+.btn-inquiry:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 24px;
@@ -81,6 +119,9 @@ p {
     text-align: center;
   }
   .project-block-description h2 {
+    font-size: 32px;
+  }
+  .skills-icon {
     font-size: 32px;
   }
 }
