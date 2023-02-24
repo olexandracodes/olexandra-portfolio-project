@@ -34,6 +34,44 @@
     ></script>
   </head>
   <body>
+    <!-- Nav -->
+    <div class="container d-flex justify-content-between">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/index.html">CV</a>
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >About me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <!-- Hero -->
     <div class="hero container mt-4">
       <div class="row">
@@ -64,24 +102,26 @@
       </div>
     </div>
 
-    <!-- Nav -->
+    <!--Sub Nav -->
     <ul class="nav nav-tabs nav-fill m-4">
       <li class="nav-item">
-        <a class="nav-link" aria-current="true" href="#">Projects</a>
+        <a class="nav-link" aria-current="true" href="projects.html"
+          >Projects</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Education</a>
+        <a class="nav-link" href="index.html#skills">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Skills</a>
+        <a class="nav-link" href="index.html#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contacts</a>
+        <a class="nav-link" href="contacts.html">Contacts</a>
       </li>
     </ul>
 
     <!-- Projects -->
-    <div class="projects-container container">
+    <div class="projects-container container" id="projects">
       <div class="row mt-5">
         <div class="col-md-6 project-block p-5">
           <img src="images/weather.png" class="img-fluid left" />
@@ -129,7 +169,7 @@
     </div>
 
     <!-- Education -->
-    <div class="container p-4 m-4 mx-auto skills-container">
+    <div class="container p-4 m-4 mx-auto skills-container" id="skills">
       <div class="row">
         <div class="col-3">
           <h2>Tech skills</h2>
@@ -196,7 +236,9 @@
           <p class="p-4 m-5">Let's work together!</p>
         </div>
         <div class="col-md-6">
-          <a href="#" class="btn btn-inquiry p-4 m-5">SEND OFFER</a>
+          <a href="mailto:itolexandra.com" class="btn btn-inquiry p-4 m-5"
+            >SEND OFFER</a
+          >
         </div>
       </div>
     </div>
