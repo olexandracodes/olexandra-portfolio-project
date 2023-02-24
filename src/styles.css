@@ -33,7 +33,8 @@ h1,
 .navbar-brand {
   font-size: 48px;
 }
-.inquiry-form p {
+.inquiry-form p,
+.btn-footer {
   font-size: 24px;
 }
 
@@ -42,7 +43,8 @@ h2,
 .btn-branding:hover {
   color: var(--accent-color);
 }
-.btn-branding {
+.btn-branding,
+.btn-footer {
   color: var(--primary-color);
 }
 h1,
@@ -50,7 +52,8 @@ p,
 .nav-link,
 .nav-tabs,
 .btn-inquiry:hover,
-.navbar-brand {
+.navbar-brand,
+.btn-footer:hover {
   color: var(--secondary-color);
 }
 .projects-container p,
@@ -68,7 +71,8 @@ body,
   background-color: var(--primary-color);
 }
 img,
-.btn-branding {
+.btn-branding,
+.btn-footer {
   background-color: var(--accent-color);
 }
 
@@ -95,7 +99,8 @@ img,
 .hero,
 .projects-container .project-description,
 .skills-container,
-.btn-inquiry:hover {
+.btn-inquiry:hover,
+.btn-footer:hover {
   border: 2px solid var(--secondary-color);
 }
 .inquiry-form {
