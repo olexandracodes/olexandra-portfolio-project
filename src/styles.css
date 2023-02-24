@@ -79,7 +79,6 @@ img,
 }
 .inquiry-form {
   background-color: rgba(45, 94, 153, 0.3);
-  border: 8px solid var(--accent-color);
   font-weight: 700;
 }
 .projects-container .project-description {
@@ -95,6 +94,9 @@ img,
 .skills-container,
 .btn-inquiry:hover {
   border: 2px solid var(--secondary-color);
+}
+.inquiry-form {
+  border: 8px solid var(--accent-color);
 }
 
 .project-block .left,
